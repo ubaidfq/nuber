@@ -1,0 +1,108 @@
+{
+	"info": {
+		"_postman_id": "805e40fe-d2b6-4180-8cfe-e5b75c13d58d",
+		"name": "nuber",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Accept Booking",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"reference_id\": \"8LYyVqOxkBrDtQrAumcY8b7JmMqL6SIUhs1wmsEy3z8uE3PdLM\",\n\t\"status\": \"accepted\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/nuber/public/api/bookings/mark",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"nuber",
+						"public",
+						"api",
+						"bookings",
+						"mark"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cancel Booking",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"reference_id\": \"8LYyVqOxkBrDtQrAumcY8b7JmMqL6SIUhs1wmsEy3z8uE3PdLM\",\n\t\"status\": \"cancelled\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/nuber/public/api/bookings/mark",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"nuber",
+						"public",
+						"api",
+						"bookings",
+						"mark"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Booking",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/nuber/public/api/bookings/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"nuber",
+						"public",
+						"api",
+						"bookings",
+						"list"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
