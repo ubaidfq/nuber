@@ -11,8 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', 'AppController@index');
+
 Route::prefix('api')->namespace('Api')->group(function () {
     // Controllers Within The "App\Http\Controllers\Api" Namespace
 	Route::post('bookings/create', ['as' => 'bookings.create', 'uses' => 'BookingController@create']);
